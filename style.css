@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+body {
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    color: #222;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.superinfo {
+    background: #6767f8;
+}
+
+.superinfo div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
+    color: #fff;
+    padding-top: 10px;
+}
+
+.superinfo p {
+    margin: 0 10px 10px 10px;
+}
+
+.superinfo a {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid transparent;
+}
+
+.superinfo a:hover {
+    border-color:  #fff;
+}
+
+.bg-header {
+    background: #7d7df8;
+}
+
+.menu {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 2.25rem;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.logo a:hover {
+    border-color: #fff;
+}
+
+.menu nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu nav ul li {
+    list-style: none;
+    margin-left: 1.5rem;
+}
+
+.menu nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: .5rem;
+}
+
+.menu nav ul li a:hover {
+    background: #fff;
+    color: #7d7df8;
+}
+
+.introducao {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding-left: 10px;
+}
+
+.introducao::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #7d7df8;
+    display: block;
+    margin-top: 2rem;
+}
+
+.sobre {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobre-info h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.sobre-info {
+    flex: 1 1 360px;
+    padding: 10px;
+}
+
+.sobre-img {
+    margin-top: 4.5rem;
+    flex: 1 1 260px;
+}
+
+
+
+
+
+
+
