@@ -120,24 +120,252 @@ a {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-}
-
-.sobre-info h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    display: block;
+    padding: 2rem 0;
+    position: relative;
 }
 
 .sobre-info {
-    flex: 1 1 360px;
-    padding: 10px;
+    flex: 2 1 300px;
+    margin: 3.5rem 10px 0 10px;
+}
+
+.sobre-info h1 {
+    position: absolute;
+    top: 0;
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+
+.sobre-info p {
+    font-size: 1.25em;
+    line-height: 1.4em;
+    margin-bottom: 1rem;
+    color: #7c7c7c;
 }
 
 .sobre-img {
-    margin-top: 4.5rem;
-    flex: 1 1 260px;
+    flex: 1 1 180px;
+    margin:3.5rem 10px 10px 10px;
 }
 
+.sobre::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #7d7df8;
+    display: block;
+    margin-top: 2rem;
+    margin: 2rem 10px 0px 10px;
+}
+
+.produtos h1 {
+    font-size: 2rem;
+    max-width: 960px;
+    margin: 2rem auto 2rem auto;
+    padding-left: 10px;
+}
+
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.produtos-item {
+    flex: 1 1 300px;
+    margin: 1rem 10px;
+    background: #f7f7f7;
+}
+
+.produtos-item h1 {
+    font-size: 2rem;
+    padding: 3rem 1rem;
+    color: #A8A8A8;
+}
+
+
+
+.produtos-item.purple {
+    border-top: 4px solid #AE81FF;
+}
+
+
+.produtos-item.pink {
+    border-top: 4px solid #F9265E;
+}
+
+.produtos-item.blue {
+    border-top: 4px solid #66D9EB;
+}
+
+.preco {
+   background: #f7f7f7;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   flex-wrap: wrap;
+   padding: 2rem 4rem;
+}
+
+.preco-item {
+    flex: 1 1 200px;
+    border: 4px solid white;
+    margin: 1rem;
+    padding: 2rem;
+    text-align: start;
+}
+
+.preco-item h2, span, a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.preco-item h2 {
+    color: #A8A8A8;
+    font-size: 2.5rem;
+}
+
+.preco-item span {
+    font-weight: bold;
+}
+
+.preco-item ul {
+    padding: 1rem 0;
+}
+
+.preco-item ul li {
+    font-style: italic;
+    color: #A8A8A8;
+    padding: .5rem 0;
+}
+
+.preco-item ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preco-item ul li::after {
+    display: inline-block;
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: #6767f8;
+    border-radius: 50%;
+}
+
+.preco-item h2, span {
+    border-bottom: 4px solid white;
+}
+
+.preco-item a {
+    border: 4px solid #222;
+    color: #222;
+    font-weight: bold;
+}
+
+/* Qualidade */
+
+.qualidade {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem calc((100vw - 960px) / 2);
+}
+
+.qualidade-item {
+    flex: 1 1 290px;
+    margin: 0 10px;
+}
+
+.qualidade h2 {
+    color: #A8A8A8;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.qualidade h2::before {
+    content: '';
+    width: 10px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.qualidade-item:nth-of-type(3n+1) h2::before {
+    background: #66D9EB ;
+}
+
+.qualidade-item:nth-of-type(3n+2) h2::before {
+    background: #F9265E ;
+}
+
+.qualidade-item:nth-of-type(3n+3) h2::before {
+    background: #AE81FF ;
+}
+
+.qualidade-item p {
+    color: #A8A8A8;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.newsletter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem calc((100vw - 960px) / 2);
+    background: #f7f7f7;
+}
+
+.newsletter-info {
+    flex: 1 1 200px;
+    color: #A8A8A8;
+    padding: 1rem 10px;
+}
+
+.newsletter-info h1 {
+    font-size: 3rem;
+
+}
+
+.newsletter-form {
+    flex: 2 1 420px;
+    margin: 10px;
+    display: flex;
+}
+
+.newsletter-form input {
+    flex: 2 1 420px;
+    padding: 1.5rem 1rem;
+    font-size: 1.5rem;
+    border: 4px solid #6767f8;
+    outline: none;
+    color: #222;
+}
+
+.newsletter-form button {
+    flex: 1 1 160px;
+    outline: none;
+    background: #6767f8;
+    border: 4px solid #6767f8;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+footer {
+    background: #6767f8;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+}
 
 
 
